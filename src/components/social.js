@@ -12,9 +12,9 @@ export default function Social(props) {
             .then((result) => {
                 // The signed-in user info.
                 const user = result.user;
+                console.log(user);
                 // Apple credential
                 const credential = OAuthProvider.credentialFromResult(result);
-                const accessToken = credential.accessToken;
                 const idToken = credential.idToken;
                 setToken(idToken);
             }).catch((error) => {
@@ -31,6 +31,7 @@ export default function Social(props) {
                 const token = credential.accessToken;
                 // The signed-in user info.
                 const user = result.user;
+                console.log(user);
                 setToken(token);
             }).catch((error) => {
             console.log(error);
@@ -46,6 +47,7 @@ export default function Social(props) {
                 const credential = FacebookAuthProvider.credentialFromResult(result);
                 const accessToken = credential.accessToken;
                 setToken(accessToken);
+                console.log(result);
             }).catch((error) => {
             console.log(error);
             // ...
