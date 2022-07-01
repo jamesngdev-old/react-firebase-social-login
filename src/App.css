@@ -1,38 +1,84 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
 .App {
-  text-align: center;
+    max-width: 80vw;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.phone {
+    background: #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+    height: 25px;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.recaptcha-container > div > div {
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-normal {
+    border: none;
+    padding: 15px 5px;
+    width: 100%;
+    background: #0f172a;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social {
+    background: #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sign-in {
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.apple {
+    background: #0f172a;
+    color: white;
+}
+
+.facebook {
+    background: #036ae9;
+    color: white;
+}
+
+.google {
+    background: #e24134;
+    color: white;
+}
+
+textarea {
+    border: none;
+    border-radius: 5px;
 }
