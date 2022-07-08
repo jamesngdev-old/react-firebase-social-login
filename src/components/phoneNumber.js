@@ -27,7 +27,7 @@ export default function PhoneNumber(props) {
         <div className="phone">
             <h1>📲 Phone </h1>
             <h3>Step 1: Enter phone</h3>
-            <input id="phoneNumber" value="" />
+            <input id="phoneNumber" />
 
             <br />
             <div id="recaptcha-container">
@@ -40,7 +40,7 @@ export default function PhoneNumber(props) {
             </button>
             <br />
             <h3>Step 2: Enter code</h3>
-            <input id="code" value="" />
+            <input id="code" />
             <button className="btn-normal" onClick={() => {
                 window.confirmationResult.confirm(document.getElementById('code').value).then((result) => {
                     console.log({ result });
